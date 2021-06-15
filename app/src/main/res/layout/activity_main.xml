@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:weightSum="1"
+        tools:context=".profiles.activities.MainActivity">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.9"
+            android:fillViewport="true">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_background"
+                    android:fontFamily="@font/gilroy_extrabold"
+                    android:text="Upgrade"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    app:layout_constraintBottom_toTopOf="@id/h06"
+                    app:layout_constraintLeft_toRightOf="@id/premium_message"
+                    app:layout_constraintRight_toLeftOf="@id/v1"
+                    app:layout_constraintTop_toBottomOf="@id/interested_title" />
+
+                <TextView
+                    android:id="@+id/notes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gilroy_extrabold"
+                    android:text="Notes"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    app:layout_constraintBottom_toTopOf="@id/h01"
+                    app:layout_constraintLeft_toLeftOf="@id/v0"
+                    app:layout_constraintRight_toRightOf="@id/v1"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/personal_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gilroy_extrabold"
+                    android:text="Personal message to you"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    app:layout_constraintBottom_toTopOf="@id/h01"
+                    app:layout_constraintLeft_toLeftOf="@id/v0"
+                    app:layout_constraintRight_toRightOf="@id/v1"
+                    app:layout_constraintTop_toBottomOf="@id/notes" />
+
+                <TextView
+                    android:id="@+id/interested_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gilroy_extrabold"
+                    android:text="Interested in you"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    app:layout_constraintBottom_toTopOf="@id/h06"
+                    app:layout_constraintHorizontal_bias="0.1"
+                    app:layout_constraintLeft_toLeftOf="@id/v0"
+                    app:layout_constraintRight_toRightOf="@id/v1"
+                    app:layout_constraintTop_toTopOf="@id/h05"
+                    app:layout_constraintVertical_bias="0" />
+
+
+                <TextView
+                    android:id="@+id/premium_message"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gilroy_semibold"
+                    android:text="Premium members can view all their likes at once"
+                    android:textSize="16dp"
+                    app:layout_constraintBottom_toTopOf="@id/h06"
+                    app:layout_constraintEnd_toEndOf="@id/v6"
+                    app:layout_constraintLeft_toLeftOf="@id/v0"
+                    app:layout_constraintRight_toLeftOf="@id/v6"
+                    app:layout_constraintStart_toStartOf="@id/interested_title"
+                    app:layout_constraintTop_toBottomOf="@id/interested_title"
+                    app:layout_constraintVertical_bias="0" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/h05"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_percent="0.5" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/h01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_percent="0.1" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/h06"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_percent="0.6" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/v1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.98" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/v0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.02" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/v5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.5" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/v6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.6" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/h09"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_percent="1" />
+
+                <include
+                    layout="@layout/main_image_layout"
+                    android:id="@+id/main_image"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintBottom_toTopOf="@id/h05"
+                    app:layout_constraintLeft_toLeftOf="@id/v0"
+                    app:layout_constraintRight_toRightOf="@id/v1"
+                    app:layout_constraintTop_toBottomOf="@id/h01" />
+
+
+                <include
+                    android:id="@+id/bottom_image1"
+                    layout="@layout/image_portrait"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintBottom_toBottomOf="@id/h09"
+                    app:layout_constraintLeft_toLeftOf="@id/v0"
+                    app:layout_constraintRight_toLeftOf="@id/v5"
+                    app:layout_constraintTop_toTopOf="@id/h06" />
+
+                <include
+                    android:id="@+id/bottom_image2"
+                    layout="@layout/image_portrait"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintBottom_toBottomOf="@id/h09"
+                    app:layout_constraintLeft_toRightOf="@id/v5"
+                    app:layout_constraintRight_toRightOf="@id/v1"
+                    app:layout_constraintTop_toTopOf="@id/h06" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </ScrollView>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1"
+            android:background="@color/white"
+            app:itemBackground="@drawable/menu_background"
+            app:itemIconTint="@drawable/navigation_view"
+            app:itemTextColor="@color/black"
+            app:menu="@menu/bottom_navigation_menu" />
+    </LinearLayout>
+</layout>
